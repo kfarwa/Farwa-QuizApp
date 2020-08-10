@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+
+<body onload="showQuestion(0), updateTimer()">
+
+    <div class="container1">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 m-3">
+                <div class="card text-center">
+                    <div class="card-header">
+                      <div id="head-quiz" class="d-inline-block">Quiz</div>
+                      <div id="timer" class="d-inline-block float-right">Time Starts Now</div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title pb-3 text-left" id="questionElement"> Q1 goes here</h5>
+                      <p class="card-text optionElement p-2  " onclick="putActiveClass(this)"> opt 1  </p>
+                      <p class="card-text optionElement p-2 "onclick="putActiveClass(this)"> opt 2 </p>
+                      <p class="card-text optionElement p-2 "onclick="putActiveClass(this)"> opt 3 </p>
+                      <p class="card-text optionElement p-2 "onclick="putActiveClass(this)"> opt 4 </p>
+                    </div>
+                    <div class="card-footer text-muted ">
+                        <a href="#" class="btn btn-primary" id="next-btn" onclick="nextQuestion()">Next Question</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+       
+
+        
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

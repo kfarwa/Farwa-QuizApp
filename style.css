@@ -1,0 +1,119 @@
+@font-face {
+    font-family: farwa-fav;
+    src: url("fontfamily/OpenSans-Light.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.separator{
+    height: 5px;
+    background: #f4a024;
+    display: block;
+}
+.quiz-app{
+    background-color :#15305b !important;
+    color: #f4a024;
+}
+.card1 , .card2{
+    height: 400px;
+    border: solid #f4a024 !important;
+    border-radius: 10px;
+    /* margin-top: 40px; */
+}
+.card-title{
+    color:#15305b !important ;
+}
+
+.card-img-top{
+    height: 200px;
+    width: 350px;
+}
+.btn-primary{
+    width: 100%;
+    background:#15305b !important;
+    color: #f4a024 !important;
+}
+.card-title{
+    min-height:60px ;
+}
+.optionElement{
+    color:#15305b !important ;
+    text-align: left;
+}
+.optionElement:hover,
+.active{
+    background-color: #f4a024;
+    color: white !important;
+}
+
+
+.container1{
+    margin : 100px auto;
+    background-color: white;
+    height: 600px !important;
+    width : 900px !important;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+     position: relative;
+     background-color :#15305b !important;
+     border: solid #f4a024 !important;
+     
+} 
+
+ #head-quiz{
+    color:#15305b !important ;
+   font-weight: bolder; 
+   /* font-size: large; */
+}
+
+/* .card{
+    margin-right: 30px ;
+    height: 550px;
+} */
+.card-header , 
+.card-footer{
+    background-color: #f4a024 !important;
+}
+
+
+
+
+/* Reward page css */
+.ty-page.text-center{
+    background-color: #f7f8fa !important;
+}
+.ty-page h1{
+    color:#294a70 ;
+    text-decoration: Underline !important;
+font-size:large;
+font-weight: bold;
+
+
+}
+.ty-page h2{
+    color:#294a70 ;
+}
+.ty-page img{
+    width: 250px;
+}
+
+
+
+/* #start{
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:100px;
+    height:150px;
+    border : 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:300px;
+    top:50px;
+    color : lightgrey;
+} */
