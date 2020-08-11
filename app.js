@@ -70,7 +70,7 @@ function showQuestion(e){
 
 ////// show option
 var optionElement = document.getElementsByClassName("optionElement")
-for (var i = 0; i <= optionElement.length; i++){
+for (var i = 0; i < optionElement.length; i++){
 
 
   optionElement[i].innerHTML =questionsArray[e].options[i];
@@ -80,8 +80,9 @@ var questionCount = 0;
 var score = 0;
 function nextQuestion(){
  
- /////// check ans by user
-//  var user_ans = document.querySelectorAll("optionElement.active").innerHTML
+ ///// check ans by user
+//  var user_ans = document.getElementsByClassName("optionElement.active");
+
 //  console.log(user_ans);
 //  if(active[0].innerHTML == questionsArray[e].answer){
    
@@ -119,13 +120,13 @@ function validate(e){
     var active = document.getElementsByClassName ("active")
 if(active[0].innerHTML == questionsArray[e].answer){
     score += 10;
-    console.log(score);
+    console.log(active);
     // sessionStorage.setItem("Score" , score)
 }
 }
 
 /////////////Timer
-
+function callTimer(){
 const startingMints = 5;
 let time = startingMints * 60;
 
@@ -145,4 +146,5 @@ if(mints == 00 && secs == 00){
     window.location.href = "reward.html";
 }
 
+}
 }
