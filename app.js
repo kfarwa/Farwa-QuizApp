@@ -3,7 +3,7 @@
 var questionsArray = [
 {
 
-    question : " Prolog comes under ______ ?",
+    question : "Prolog comes under ______ ?",
     answer : "Logic Programming",
 options :[
      "Logic Programming",
@@ -11,36 +11,33 @@ options :[
      "OOP",
      "Functional"
 ]
-    
-
-       
-    },
+},
     {
 
-        question : " A program that can execute high-level language programs ?",
-        answer : " Interpreter",
+        question : "A program that can execute high-level language programs ?",
+        answer : "Interpreter",
         options :[
-         " Compiler",
-         "Interpreter ",
-        " Sensor",
+         "Compiler",
+         "Interpreter",
+        "Sensor",
          "Circuitry"
 ]
        
     },
     {
 
-        question : " JVM stands for ?",
+        question : "JVM stands for ?",
         answer : "Java virtual machine",
 options :[
-         " Java virtual machine",
+         "Java virtual machine",
 
-         " Java visual machine",
-         " JRE virtual machine",
+         "Java visual machine",
+         "JRE virtual machine",
          "JRE visual machine",
 ]
     },
    {
-    question : " Which of the following isn’t a characteristic of High level languages ?",
+    question : "Which of the following isn’t a characteristic of High level languages ?",
     answer : "machine code",
 options :[
      "machine code",
@@ -50,10 +47,10 @@ options :[
 ]
    },
    {
-    question : " The only language which the computer understands is  ?",
+    question : "The only language which the computer understands is  ?",
     answer : "Binary Language",
 options :[
-     " Assembly Language",
+     "Assembly Language",
 
      "Binary Language",
     "BASIC",
@@ -78,26 +75,21 @@ for (var i = 0; i < optionElement.length; i++){
 }
 var questionCount = 0;
 var score = 0;
+/////////next
 function nextQuestion(){
+
+    if(questionCount == questionsArray.length - 1 ){
+        alert("Ready For Your Result Click Okay");
+        window.location.href = "reward.html";
+        return;
+    }
  
- ///// check ans by user
-//  var user_ans = document.getElementsByClassName("optionElement.active");
 
-//  console.log(user_ans);
-//  if(active[0].innerHTML == questionsArray[e].answer){
-   
-    // score += 10;
-    //     sessionStorage.setItem("Score" , score)
-
-//   }
-   questionCount++;
-validate(questionCount);
- removeActiveClass()
+   validate(questionCount);
+questionCount++;
+removeActiveClass()
  showQuestion(questionCount)
-//  if(questionCount == 4 ){
-//     alert("Ready For Your Result Click Okay");
-//     window.location.href = "reward.html";
-// }
+ 
 
 }
 
@@ -120,14 +112,15 @@ function validate(e){
     var active = document.getElementsByClassName ("active")
 if(active[0].innerHTML == questionsArray[e].answer){
     score += 10;
-    console.log(active);
-    // sessionStorage.setItem("Score" , score)
+    sessionStorage.setItem("points" , score)
 }
 }
 
+
+
 /////////////Timer
 function callTimer(){
-const startingMints = 5;
+const startingMints = 1;
 let time = startingMints * 60;
 
 const timer = document.getElementById('timer');
@@ -148,3 +141,4 @@ if(mints == 00 && secs == 00){
 
 }
 }
+
